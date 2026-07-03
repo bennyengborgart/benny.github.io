@@ -159,22 +159,18 @@ img {
 .project-page {
   max-width: 900px;
   margin: 0 auto;
-  padding: 60px 25px 140px;
+  padding: 60px 25px 120px;
 }
 
 .project-page img {
   width: 100%;
   display: block;
-  margin-bottom: 60px;
-  transition: opacity 0.4s ease;
+  margin-bottom: 80px;
+  transition: opacity 0.35s ease;
 }
 
-.project-page img:nth-child(2n) {
-  margin-bottom: 90px;
-}
-
-.project-page img:nth-child(3n) {
-  margin-bottom: 45px;
+.project-page img:last-child {
+  margin-bottom: 0;
 }
 
 .project-page img:hover {
