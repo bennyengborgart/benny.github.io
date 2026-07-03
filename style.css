@@ -25,7 +25,7 @@ body {
   max-width: 900px;
 }
 
-/* PROJECTS GRID */
+/* PROJECT GRID */
 .projects {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -33,25 +33,26 @@ body {
   padding: 0 40px 120px;
 }
 
-/* HULLER OM BULLER OFFSET */
+/* ASYMMETRIC FEEL */
 .project:nth-child(2) { margin-top: 60px; }
 .project:nth-child(3) { margin-top: -30px; }
 .project:nth-child(4) { margin-top: 80px; }
+.project:nth-child(5) { margin-top: 10px; }
 
-/* MINI KOLUMNER */
+/* MINI COLUMNS */
 .mini img {
   width: 100%;
   display: block;
   margin-bottom: 12px;
 }
 
-/* TITEL */
+/* TITLE */
 .title {
   margin-top: 10px;
   font-size: 14px;
 }
 
-/* HOVER */
+/* PROJECT LINKS */
 .project {
   text-decoration: none;
   color: inherit;
@@ -63,7 +64,20 @@ body {
   transform: translateY(-5px);
 }
 
-/* RESPONSIV */
+/* PROJECT PAGE */
+.project-page {
+  columns: 2;
+  column-gap: 40px;
+  padding: 40px;
+}
+
+.project-page img {
+  width: 100%;
+  margin-bottom: 40px;
+  break-inside: avoid;
+}
+
+/* RESPONSIVE */
 @media (max-width: 1000px) {
   .projects {
     grid-template-columns: repeat(2, 1fr);
@@ -73,5 +87,8 @@ body {
 @media (max-width: 600px) {
   .projects {
     grid-template-columns: 1fr;
+  }
+  .project-page {
+    columns: 1;
   }
 }
