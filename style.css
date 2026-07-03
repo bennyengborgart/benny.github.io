@@ -19,8 +19,10 @@ body {
 
 .hero img {
   width: 65%;
+  max-width: 900px;
+  height: auto;
   display: block;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
 }
 
 .hero img:nth-child(1) { margin-left: 0; }
@@ -108,5 +110,13 @@ body {
 
   .project-page {
     columns: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero img {
+    width: 100%;
+    max-width: none;
+    margin-left: 0 !important;
   }
 }
