@@ -31,39 +31,64 @@ img {
 }
 
 /* =========================
-   HERO (organiskt / gallery feel)
+   HERO (9 images - editorial wall)
 ========================= */
 
 .hero {
-  padding: 40px 50px 240px;
-  position: relative;
+  padding: 40px 50px 300px;
 }
 
 .hero img {
   height: auto;
-  margin-bottom: 140px;
+  margin-bottom: 150px;
 }
 
-/* mer "hängd på vägg"-känsla */
-
+/* ROW 1 */
 .hero img:nth-child(1) {
-  width: 46%;
+  width: 44%;
   margin-left: 0;
 }
 
 .hero img:nth-child(2) {
-  width: 30%;
+  width: 28%;
   margin-left: 62%;
 }
 
 .hero img:nth-child(3) {
-  width: 38%;
+  width: 36%;
+  margin-left: 18%;
+}
+
+/* ROW 2 */
+.hero img:nth-child(4) {
+  width: 52%;
+  margin-left: 38%;
+}
+
+.hero img:nth-child(5) {
+  width: 30%;
+  margin-left: 8%;
+}
+
+.hero img:nth-child(6) {
+  width: 42%;
+  margin-left: 55%;
+}
+
+/* ROW 3 */
+.hero img:nth-child(7) {
+  width: 34%;
   margin-left: 12%;
 }
 
-.hero img:nth-child(4) {
-  width: 52%;
-  margin-left: 40%;
+.hero img:nth-child(8) {
+  width: 48%;
+  margin-left: 45%;
+}
+
+.hero img:nth-child(9) {
+  width: 38%;
+  margin-left: 5%;
 }
 
 /* =========================
