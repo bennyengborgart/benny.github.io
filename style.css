@@ -157,17 +157,28 @@ img {
 ========================= */
 
 .project-page {
-  max-width: 1350px;
-  margin: auto;
-  columns: 2;
-  column-gap: 70px;
-  padding: 40px 50px 120px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 25px 140px;
 }
 
 .project-page img {
   width: 100%;
+  display: block;
+  margin-bottom: 60px;
+  transition: opacity 0.4s ease;
+}
+
+.project-page img:nth-child(2n) {
+  margin-bottom: 90px;
+}
+
+.project-page img:nth-child(3n) {
   margin-bottom: 45px;
-  break-inside: avoid;
+}
+
+.project-page img:hover {
+  opacity: 0.85;
 }
 
 /* =========================
