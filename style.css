@@ -18,11 +18,11 @@ body {
 }
 
 .hero img {
-  width: 65%;
-  max-width: 900px;
+  width: 38%;
+  max-width: 500px;
   height: auto;
   display: block;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
 }
 
 .hero img:nth-child(1) { margin-left: 0; }
@@ -112,3 +112,4 @@ body {
     columns: 1;
   }
 }
+
