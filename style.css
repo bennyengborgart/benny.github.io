@@ -24,10 +24,34 @@ img {
 ========================= */
 
 .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 70px 50px 50px;
   font-size: 18px;
   letter-spacing: 4px;
   font-weight: 400;
+}
+
+.logo {
+  color: #111;
+}
+
+.projects-link {
+  color: #111;
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: opacity .3s ease;
+}
+
+.projects-link:hover {
+  opacity: .5;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* =========================
@@ -93,11 +117,6 @@ img {
   width: 100%;
   display: block;
   opacity: 0.9;
-}
-
-.mini img {
-  width: 100%;
-  display: block;
 }
 
 /* TITLE */
