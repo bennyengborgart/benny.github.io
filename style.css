@@ -179,15 +179,25 @@ img {
     letter-spacing: 3px;
   }
 
-  /* HERO - fortfarande luft, men mer kontrollerat */
-  .hero {
-    padding: 0 25px 120px;
-  }
 
-  .hero img {
-    width: 85% !important;
-    margin: 0 auto 60px auto !important;
-  }
+  .hero {
+  padding: 0 25px 120px;
+}
+
+.hero img {
+  width: 75% !important;
+  margin-bottom: 80px;
+  height: auto;
+}
+
+.hero img:nth-child(odd) {
+  margin-left: 0 !important;
+}
+
+.hero img:nth-child(even) {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
 
   /* PROJECTS - behåller mini-känslan */
   .projects {
