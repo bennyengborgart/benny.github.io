@@ -112,11 +112,3 @@ body {
     columns: 1;
   }
 }
-
-@media (max-width: 600px) {
-  .hero img {
-    width: 100%;
-    max-width: none;
-    margin-left: 0 !important;
-  }
-}
