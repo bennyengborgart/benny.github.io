@@ -1,58 +1,47 @@
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
   background: #faf9f7;
   color: #111;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* HEADER */
 .header {
-  padding: 40px;
+  padding: 60px 40px 20px;
   font-size: 18px;
-  letter-spacing: 1px;
+  letter-spacing: 3px;
 }
 
-/* HERO */
+/* HERO (kontrollerat huller om buller) */
 .hero {
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-  padding: 0 40px 80px;
+  padding: 40px 40px 120px;
 }
 
 .hero img {
-  width: 100%;
-  max-width: 900px;
+  width: 65%;
+  display: block;
+  margin-bottom: 90px;
 }
 
-/* PROJECT GRID */
+.hero img:nth-child(1) { margin-left: 0; }
+.hero img:nth-child(2) { margin-left: 30%; }
+.hero img:nth-child(3) { margin-left: 10%; }
+.hero img:nth-child(4) { margin-left: 45%; }
+
+/* PROJECTS GRID */
 .projects {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
   padding: 0 40px 120px;
 }
 
-/* ASYMMETRIC FEEL */
-.project:nth-child(2) { margin-top: 60px; }
-.project:nth-child(3) { margin-top: -30px; }
-.project:nth-child(4) { margin-top: 80px; }
-.project:nth-child(5) { margin-top: 10px; }
+/* mild asymmetri */
+.project:nth-child(2) { transform: translateY(40px); }
+.project:nth-child(3) { transform: translateY(-20px); }
+.project:nth-child(5) { transform: translateY(30px); }
 
-/* MINI COLUMNS */
-.mini img {
-  width: 100%;
-  display: block;
-  margin-bottom: 12px;
-}
-
-/* TITLE */
-.title {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-/* PROJECT LINKS */
+/* PROJECT CARD */
 .project {
   text-decoration: none;
   color: inherit;
@@ -60,15 +49,35 @@ body {
 }
 
 .project:hover {
-  opacity: 0.7;
-  transform: translateY(-5px);
+  opacity: 0.8;
 }
 
-/* PROJECT PAGE */
+/* MINI STACK */
+.mini {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mini img {
+  width: 100%;
+  display: block;
+}
+
+/* TITLE */
+.title {
+  margin-top: 12px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* PROJECT PAGE (masonry) */
 .project-page {
   columns: 2;
-  column-gap: 40px;
+  column-gap: 60px;
   padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-page img {
@@ -77,17 +86,26 @@ body {
   break-inside: avoid;
 }
 
-/* RESPONSIVE */
-@media (max-width: 1000px) {
-  .projects {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* BACK LINK */
+.back {
+  padding: 40px;
+  display: block;
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
 }
 
-@media (max-width: 600px) {
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .projects {
     grid-template-columns: 1fr;
   }
+
+  .hero img {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
   .project-page {
     columns: 1;
   }
