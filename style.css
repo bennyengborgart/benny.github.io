@@ -124,6 +124,13 @@ img {
   margin-bottom: 80px;
 }
 
+.project-page img.portrait {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 /* sista bilden utan extra space */
 .project-page img:last-child {
   margin-bottom: 0;
