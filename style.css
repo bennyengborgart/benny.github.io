@@ -175,29 +175,54 @@ img {
 
   .header {
     padding: 40px 25px;
+    font-size: 16px;
+    letter-spacing: 3px;
   }
 
+  /* HERO - fortfarande luft, men mer kontrollerat */
   .hero {
-    padding: 0 25px 100px;
+    padding: 0 25px 120px;
   }
 
   .hero img {
-    width: 100% !important;
-    margin-left: 0 !important;
-    margin-bottom: 35px;
+    width: 85% !important;
+    margin: 0 auto 60px auto !important;
   }
 
+  /* PROJECTS - behåller mini-känslan */
   .projects {
     grid-template-columns: 1fr;
-    gap: 60px;
-    padding: 0 25px 90px;
+    gap: 70px;
+    padding: 0 25px 100px;
   }
 
+  .mini {
+    width: 90px; /* 🔥 inte för stora på mobil */
+    margin: 0 auto;
+    gap: 5px;
+  }
+
+  .title {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  /* PROJECT PAGES - samma känsla som desktop */
   .project-page {
-    padding: 30px 25px 80px;
+    max-width: 100%;
+    padding: 40px 20px 100px;
+  }
+
+  .project-page img {
+    margin-bottom: 60px;
+  }
+
+  /* portrait fortfarande mindre */
+  .project-page img.portrait {
+    max-width: 75%;
   }
 
   .back {
-    margin: 30px 25px;
+    margin: 25px 20px;
   }
 }
