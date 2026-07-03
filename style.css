@@ -84,14 +84,15 @@ img {
 .mini {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  width: 120px;     /* 🔥 mycket mindre */
+  gap: 4px;
+  width: 70px;   
   margin: 0 auto;
 }
 
 .mini img {
   width: 100%;
   display: block;
+  opacity: 0.9;
 }
 
 .mini img {
