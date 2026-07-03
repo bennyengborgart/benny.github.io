@@ -163,9 +163,10 @@ img {
 }
 
 .project-page img {
-  width: 100%;
   display: block;
-  margin-bottom: 80px;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 80px;
   transition: opacity 0.35s ease;
 }
 
